@@ -1,0 +1,156 @@
+Form HTML Code replaced by the IFrame Google Form
+[Change requested by Norma Nangju & Mary Niang]
+
+<form method="post" action="contact.php">
+  <fieldset>
+  <legend>
+    Fill out our Form!
+    </legend>
+  <input type="text" id="customer_name" name="user_name" placeholder="Your Name">
+  <input type="tel" id="customer_tele" name="user_tel" placeholder="Your Phone Number">
+  <input type="email" id="customer_email" name="user_email" placeholder="Your Email">
+  
+  <br>
+
+  <label for="age_group">How old is your child?</label>
+  <select id="age_group" name="child_age">
+    <option value="age_1">1 Year Old</option>
+    <option value="age_2">2 Years Old</option>
+    <option value="age_3">3 Years Old</option>
+  </select>
+  <br>
+  <br>
+  <label>Are you looking to tour or to set up an enrollment appointment?</label>
+  <br>
+  <input type="radio" id="tour" value="tour" name="arrangement">
+  <label for="tour" class="light">Tour</label>
+  <input type="radio" id="appointment" value="appt" name="arrangement">
+  <label for="appointment" class="light">Appointment</label>
+  <br>
+  <br>
+  <textarea>How did you hear of us?</textarea>
+  <br>
+  <button type="submit">
+    Submit
+    </button>
+    </fieldset>
+</form>
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+	<div class="primary-col clearfix">
+		<h2 id="curricula">Curriculum</h2>
+				<p>Our curriculum aligns with the Kentucky Early Learning Standards and allows children the opportunity to explore, observe, socialize with other children, problem solve, and experiment in a structured yet choice-based environment. The learning environment encourages children to ask questions, make conclusions, and develop independence. The different types of activities will stimulate a child's cognitive, social, emotional, and physical growth.</p>
+
+    <div id="meetstaff" class="staff_section">
+    <h2>Meet the Staff</h2>
+    <h3>Director, Mary Niang</h3> 
+      <p>Mary Niang obtained her bachelor’s degree in Business Administration and Accounting from Saint Joseph's University. Mary received her MBA and Project Management certificate from Georgetown University. Mary also received her MBA from Bellarmine University. She speaks four languages. She served in the United States Army as a specialist with the 3/1 infantry division. She owned and ran “Classic Supply Chain”, specialized in appearance enhancement and beauty services based in Staten Island, New York. Mary is a loving mother of 4 boys. Upon her military discharge in 2014, Mary worked for the Federal Government until 2020 she decided to finally pursue her dreams of working with kids.
+      </p>
+  <h3>Assistant Director, Norma Nangju</h3>
+    <p>Norma Nangju received a B.S.in Environmental Engineering from Swarthmore College.  She also received a M.S. in Environmental Engineering, a M.A.T in Elementary Education, and an Ed.S. in Educational Administration from University of Louisville.  She is currently pursuing an Ed.D. in Educational Leadership and Organizational Development from University of Louisville.  She has 20 years of teaching experience.</p>
+  <h3>Daycare Staff: Marwa Munaf, Mohammedi Begum, Rona Osman, Tabarek Kadhim</h3>
+  </div>
+	</div>
+
+  .primary-col {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+[For Media Query]
+.primary-col {
+ width: 40%;
+ display: inline-block;
+ padding: 2px 30px;
+ background: #ffffff;
+}
+
+**Call us at (502) 632-1070** 
+
+https://www.facebook.com/LouisvilleYoungLeaders/
+
+
+<div class="touch_section">
+    <h2>Get in Touch</h2>
+		<strong>By Phone: </strong> <div class="getInTouch">Call <a class="PDvGL q8cvFf" href="tel:+1-502-632-1070" data-tracking-element-type="3" jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">(502) 632-1070</a>.</div>
+		<br/><strong>By Email: </strong> <div class="getInTouch">Click the following: <a href="mailto:louisvilleyoungleaders@gmail.com?subject=In regards to your daycare">Young Lead Lou</a>.</div>
+    <br/><strong>Visit us: </strong> <div class="getInTouch">We are located in West Buechel. Click <a class="PDvGL q8cvFf" href="https://www.google.com/maps/place/3809+Bardstown+Rd,+Louisville,+KY+40218/@38.1968153,-85.6573815,17z/data=!3m1!4b1!4m5!3m4!1s0x88690b085f9eadfb:0x1931a7f71cc290f8!8m2!3d38.1968153!4d-85.6551875" target="_blank" data-tracking-element-type="6" jslog="56039; track:impression,click">HERE</a> to get directions.</div>
+    <br/><strong>Daycare Hours: </strong> <div class="getInTouch">Academic day is 8:00 AM - 4:00 PM.  Extended day is 6:30 AM - 6:30 PM</div>
+    </div>
+
+
+
+.progressBar::after {
+  content: "";
+  display: block;
+  width: 33%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #f2778d;
+}
+
+.progressBar::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 33%;
+  top: -9px;
+  background-color: #b50424;
+}
+
+.progressBar {
+  height: 6px;
+  border-radius: 3px;
+  background: #d6d7d9;
+  position: relative;
+  margin-bottom: 1.875em;
+  margin-top: 75px;
+}
+
+
+class="clearfix"
+
+Junk:
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.navigationBlocks {
+  display: inline-block;
+  float: right;
+}
+
+Original .dropdown-content bg color:
+#f9f9f9
+
+/*--Try out top: 100%--*/
+
+columngeneral was set to:
+text-align: center;
+
+background: #deedef;
+background: #e2d7fa;
+
+linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+
+float: left; <- originally on .view
+
+Tuition Table colors:
+
+f5f3ef
+f5f5f5
+
+Tuition Calc colors:
+
+#473966
+#a7ced2

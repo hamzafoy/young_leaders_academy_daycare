@@ -1,0 +1,1305 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: #1a0841;
+}
+
+p {
+	font-size: .95em;
+  margin-bottom: 1.2em;
+}
+
+h2,
+h3 {
+	color: #ff5959;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation
+For both main page & subpages ---- */
+
+.name a,
+.main-nav a {
+	text-align: center;
+  display: block;
+}
+
+.name a {
+  color: #1a0841;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #1a0841;
+	text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 0;
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: #4f9da6;
+  opacity: 0.6;
+}
+
+.dropdown-content,
+.dropdown-content2,
+.dropdown-content3 {
+  display: none;
+  font-weight: bolder;
+  border: 3px solid #ff925a;
+  background-color: #ff9f5a;
+}
+
+.hamburgerIcon {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 20px;
+}
+
+.iconFacebook::after {
+  content: url(./img/facebook.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.iconInstagram::after {
+  content: url(./img/instagram.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.iconYoutube::after {
+  content: url(./img/youtube.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+/* ---- Layout Containers
+For the main page only ---- */
+
+.main-header {
+  margin: 0 0;
+  padding: 25px 50px 45px;
+  background: #ffad5a;
+}
+
+.main-footer {
+	background: #ffad5a;
+	padding: 2em 0;
+  text-align: center;
+}
+
+.columngeneral {
+  margin-top: 0;
+}
+
+.wholecolumn {
+  text-align: center;
+}
+
+.secondary-col {
+  padding: 30px 30px;
+}
+
+.tertiary-col {
+  padding: 30px 30px;
+}
+
+.googleForm {
+  background: #ffbcbc;
+  border-radius: 5%
+}
+
+.overviewCentered {
+  text-align: center;
+}
+
+/* ---- Layout Containers
+For the subpages ---- */
+
+.subpageHeading {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.teamDirectorsMobile {
+  text-align: left;
+}
+
+.overviewBulk {
+  text-align: left;
+}
+
+#enroll_career {
+  display: flex;
+  flex-direction: column;
+}
+
+.enrollYourChild {
+  margin-bottom: 50px;
+}
+
+/*-- Accordion CSS --*/
+
+.accordionList{
+	width: 400px;
+  margin: 10px auto 30px auto;
+}
+
+.accordionList label {
+  padding: 5px 20px;
+  position: relative;
+	z-index: 20;
+	display: block;
+	height: 40px;
+	cursor: pointer;
+	color: #1a0841;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	line-height: 33px;
+	font-size: 19px;
+	background: #ffba76;
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.accordionList label:hover {
+  background: #ffad5a;
+}
+
+.accordionList input:checked + label,
+.accordionList input:checked + label:hover{
+	background: #f1a14e;
+	color: #1a0841;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.accordionList input{
+	display: none;
+}
+
+.accordionList article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: 
+		height 0.3s ease-in-out, 
+		box-shadow 0.6s linear;
+}
+
+.accordionList input:checked ~ article {
+	transition: 
+		height 0.5s ease-in-out, 
+		box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+.accordionList article p {
+	font-style: italic;
+	color: #777;
+	line-height: 16px;
+	font-size: 0.75em;
+	padding: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.accordionList input:checked ~ article.ac-one {
+	height: 850px;
+}
+
+.accordionList input:checked ~ article.ac-two {
+	height: 995px;
+}
+
+.accordionList input:checked ~ article.ac-three {
+	height: 450px;
+}
+
+.accordionList input:checked ~ article.ac-four {
+  height: 375px;
+}
+
+.accordionList input:checked ~ article.ac-five {
+  height: 600px;
+}
+
+.accordionList input:checked ~ article.tuition-one {
+  height: 650px;
+}
+
+/*-- Photo Hover Gallery --*/
+
+.photoSideways {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.view {
+  width: 500px;
+  height: 300px;
+  margin: 2px;
+  display: inline-block;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+}
+
+.view .mask, .view .content {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 0.70em;
+  position: relative;
+  color: #fff;
+  padding: 10px 50px 10px 30px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+/* -- Photo Hover Gallery Animation -- */
+
+.view-effect img { 
+  transition: all 0.2s linear;
+}
+
+.view-effect .mask {
+  opacity: 0;
+  background-color: rgba(219,127,8, 0.7); 
+  transition: all 0.4s ease-in-out;
+}
+
+.view-effect h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-effect p { 
+  transform: translateY(100px);
+  opacity: 0;
+transition: all 0.2s linear;
+}
+
+.view-effect a.info{
+  opacity: 0;
+transition: all 0.2s ease-in-out;
+}
+
+.view-effect:hover img { 
+	transform: scale(1.1);
+}
+
+.view-effect:hover .mask { 
+	opacity: 1;
+}
+
+.view-effect:hover h2,
+.view-effect:hover p,
+.view-effect:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view-effect:hover p {
+    transition-delay: 0.1s;
+}
+
+.view-effect:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/*-- Tuition Table --*/
+
+table {
+  width: 83%;
+  margin: 0 auto;
+}
+
+thead {
+  background: #c6dee1;
+}
+
+th {
+  padding: 10px 0;
+}
+
+td {
+  padding: 10px 10px;
+  background: #edf5f6;
+  font-size: 0.70em;
+}
+
+tr {
+  border: 1px solid #c6dee1;
+}
+
+table,
+thead,
+tbody {
+  border: 2px solid #1a0841;
+}
+
+/*--- Tuition Calculator Styles ---*/
+
+body {
+  text-align: center;
+}
+
+.header {
+  background: #c6dee1;
+  color: black;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 3px;
+  padding-top: 15px;
+  margin-top: 40px;
+  padding-bottom: 0;
+  border-radius: 25px;
+  box-shadow: 3px 3px 2px #9088a3;
+  border: 3px solid #9eb1b4;
+}
+
+#tuitionAmount {
+  font-size: 18px;
+}
+
+#outputCalc {
+  background: white;
+  color: black;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+}
+
+.groupOfButtons {
+  background: #edf5f6;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 3px 3px 2px #cae1e4;
+  border: 3px solid #d5dcdd;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button {
+  background-color: #478d95;
+  color: white;
+}
+
+button:hover {
+  background: #ffad5a;
+  color: black;
+  font-size: 1.05em;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dailyRate,
+.infantRate,
+.youngToddlerRate,
+.oldToddlerRate,
+.preschoolRate,
+.schoolAgeRate {
+  line-height: 1.5em;
+  font-size: 0.75em;
+}
+
+.youngToddlerRate {
+  padding-bottom: 20px;
+}
+
+.calculatePartOne {
+  display: inline;
+}
+
+.calculatePartTwo {
+  display: inline;
+  padding-left: 55px;
+}
+
+#numberOfDays,
+#numberOfInfants,
+#numberOfYoungToddlers,
+#numberOfOldToddlers,
+#numberOfPreschoolers,
+#numberOfSchoolAge {
+  display: inline;
+}
+
+/*--- Form.HTML CSS ---*/
+
+.formsList {
+  margin: 0 auto;
+  list-style-type: circle;
+  padding-bottom: 15px;
+}
+
+.formItems {
+  color: #1a0841;
+}
+
+.formItems::before {
+  content: url(./img/adobeacrobatreader.svg);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+/*-- Career List Table --*/
+
+#careerList {
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+#careerList td {
+  border: 2px solid #1a0841;
+}
+
+.entryLabel {
+  font-size: 1em;
+  text-decoration: underline;
+  background: #dcebed;
+}
+
+.jobTitle {
+  width: 75%;
+  background: #edf5f6;
+  font-size: 0.85em;
+}
+
+.payRate {
+  width: 25%;
+  background: #edf5f6;
+  font-size: 0.70em;
+}
+
+.jobDescription {
+  background: #fff;
+}
+
+.googleFormLong {
+  margin-left: 4%;
+  margin-right: 4%;
+  background: #ffbcbc;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 699px) {
+
+/* ---- Navigation
+For the main page & subpages ---- */
+
+.name a,
+.main-nav a {
+	text-align: center;
+  display: block;
+}
+
+.name a {
+  color: #1a0841;
+}
+
+.main-nav {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #1a0841;
+	text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: #4f9da6;
+  opacity: 0.6;
+}
+
+.dropdown-content,
+.dropdown-content2,
+.dropdown-content3 {
+  display: none;
+  font-weight: bolder;
+  border: 3px solid #ff925a;
+  background-color: #ff9f5a;
+}
+
+.hamburgerIcon {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 20px;
+}
+
+.iconFacebook::after {
+  content: url(./img/facebook.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.iconInstagram::after {
+  content: url(./img/instagram.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.iconYoutube::after {
+  content: url(./img/youtube.svg);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+/* ---- Layout Containers
+For the main page ---- */
+
+.main-header {
+  margin: 0 0;
+  padding: 25px 50px 45px;
+  background: #ffad5a;
+}
+
+.main-footer {
+	background: #ffad5a;
+	padding: 2em 0;
+  text-align: center;
+}
+
+.columngeneral {
+  margin-top: 0;
+}
+
+.wholecolumn {
+  text-align: center;
+}
+
+.secondary-col {
+  padding: 30px 30px;
+}
+
+.tertiary-col {
+  padding: 30px 30px;
+}
+
+.googleForm {
+  background: #ffbcbc;
+  border-radius: 5%
+}
+
+.overviewCentered {
+  text-align: center;
+}
+
+/* ---- Layout Containers
+For the subpages ---- */
+
+
+/*-- Accordion CSS --*/
+
+.accordionList{
+	width: 400px;
+  margin: 10px auto 30px auto;
+}
+
+.accordionList label {
+  padding: 5px 20px;
+  position: relative;
+	z-index: 20;
+	display: block;
+	height: 40px;
+	cursor: pointer;
+	color: #1a0841;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	line-height: 33px;
+	font-size: 19px;
+	background: #ffba76;
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.accordionList label:hover {
+  background: #ffad5a;
+}
+
+.accordionList input:checked + label,
+.accordionList input:checked + label:hover{
+	background: #f1a14e;
+	color: #1a0841;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.accordionList input{
+	display: none;
+}
+
+.accordionList article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: 
+		height 0.3s ease-in-out, 
+		box-shadow 0.6s linear;
+}
+
+.accordionList input:checked ~ article {
+	transition: 
+		height 0.5s ease-in-out, 
+		box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+.accordionList article p {
+	font-style: italic;
+	color: #777;
+	line-height: 16px;
+	font-size: 0.75em;
+	padding: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.accordionList input:checked ~ article.ac-one {
+	height: 850px;
+}
+
+.accordionList input:checked ~ article.ac-two {
+	height: 995px;
+}
+
+.accordionList input:checked ~ article.ac-three {
+	height: 450px;
+}
+
+.accordionList input:checked ~ article.ac-four {
+  height: 375px;
+}
+
+.accordionList input:checked ~ article.ac-five {
+  height: 600px;
+}
+
+.accordionList input:checked ~ article.tuition-one {
+  height: 650px;
+}
+
+/*-- Photo Hover Gallery --*/
+
+.photoSideways {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.view {
+  width: 500px;
+  height: 300px;
+  margin: 2px;
+  display: inline-block;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+}
+
+.view .mask, .view .content {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 0.70em;
+  position: relative;
+  color: #fff;
+  padding: 10px 50px 10px 30px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+/* -- Photo Hover Gallery Animation -- */
+
+.view-effect img { 
+  transition: all 0.2s linear;
+}
+
+.view-effect .mask {
+  opacity: 0;
+  background-color: rgba(219,127,8, 0.7); 
+  transition: all 0.4s ease-in-out;
+}
+
+.view-effect h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-effect p { 
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view-effect a.info{
+  opacity: 0;
+transition: all 0.2s ease-in-out;
+}
+
+.view-effect:hover img { 
+	transform: scale(1.1);
+}
+
+.view-effect:hover .mask { 
+	opacity: 1;
+}
+
+.view-effect:hover h2,
+.view-effect:hover p,
+.view-effect:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view-effect:hover p {
+    transition-delay: 0.1s;
+}
+
+.view-effect:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/*-- Tuition Table --*/
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+thead {
+  background: #c6dee1;
+}
+
+th {
+  padding: 10px 0;
+}
+
+td {
+  padding: 10px 10px;
+  background: #edf5f6;
+  font-size: 1em;
+}
+
+tr {
+  border: 1px solid #c6dee1;
+}
+
+table,
+thead,
+tbody {
+  border: 2px solid #1a0841;
+}
+
+/*--- Tuition Calculator Styles ---*/
+
+body {
+  text-align: center;
+}
+
+.header {
+  background: #c6dee1;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 3px;
+  padding-top: 15px;
+  margin-top: 40px;
+  padding-bottom: 0;
+  border-radius: 25px;
+  box-shadow: 3px 3px 2px #9088a3;
+}
+
+#tuitionAmount {
+  font-size: 18px;
+}
+
+#outputCalc {
+  background: white;
+  color: black;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.groupOfButtons {
+  background: #edf5f6;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 35px;
+  padding-top: 25px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 2px #cae1e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  height: 260px;
+}
+
+.buttons_one {
+  margin-left: 10%;
+}
+
+button {
+  background-color: #478d95;
+  color: white;
+}
+
+button:hover {
+  background: #ffad5a;
+  color: black;
+  font-size: 1.05em;
+}
+
+.dailyRate,
+.infantRate,
+.youngToddlerRate,
+.oldToddlerRate,
+.preschoolRate,
+.schoolAgeRate {
+  line-height: 1.5em;
+  font-size: 0.75em;
+  margin-bottom: 2px;
+}
+
+.calculatePartOne {
+  display: inline;
+}
+
+.calculatePartTwo {
+  display: inline;
+  padding-left: 55px;
+}
+
+#numberOfDays,
+#numberOfInfants,
+#numberOfYoungToddlers,
+#numberOfOldToddlers,
+#numberOfPreschoolers,
+#numberOfSchoolAge {
+  display: inline;
+}
+
+/*--- Form.HTML CSS ---*/
+
+.formsList {
+  margin: 0 auto;
+  list-style-type: circle;
+}
+
+.formItems {
+  color: #1a0841;
+}
+
+.formItems::before {
+  content: url(./img/adobeacrobatreader.svg);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+/*-- Career List Table --*/
+
+#careerList {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 15px !important;
+}
+
+#careerList td {
+  border: 2px solid #1a0841;
+}
+
+#careerList th {
+  font-size: 1.15em;
+}
+
+.entryLabel {
+  font-size: 1em;
+  text-decoration: underline;
+  background: #dcebed;
+}
+
+.jobTitle {
+  width: 75%;
+  background: #edf5f6;
+  font-size: 0.85em;
+}
+
+.payRate {
+  width: 25%;
+  background: #edf5f6;
+  font-size: 0.70em;
+}
+
+.jobDescription {
+  background: #fff;
+  font-size: 0.85em;
+}
+
+.googleFormLong {
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #ffbcbc;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1110px) {
+
+  /* ---- Navigation
+  For the main page & subpages ---- */
+  
+  .name {
+    font-size: 1.25em;
+    display: inline-block;
+    float: left;
+  }
+  
+  .main-nav {
+    display: block !important;
+  }
+  
+  .main-nav a {
+    font-size: .95em;
+    color: #1a0841;
+    text-transform: uppercase;
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .main-nav a:hover {
+    opacity: 0.6;
+  }
+  
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: -5px;
+    background: #ffad5a;
+    padding: 25px 50px 25px;
+    z-index: 21;
+  }
+  
+  li.dropdown {
+    float: right;
+  }
+  
+  .dropdown-content,
+  .dropdown-content2,
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    top: 72px;
+  }
+  
+  .dropdown-content a,
+  .dropdown-content2 a,
+  .dropdown-content3 a {
+    color: #ff5959;
+    padding: 12px 16px;
+    font-size: 0.75em;
+    text-decoration: none;
+  }
+  
+  .main-nav a:nth-child(even) {
+    color: #4f9da6;
+  }
+  
+  .dropdown-content a:hover,
+  .dropdown-content2 a:hover,
+  .dropdown-content3 a:hover {
+    background: white;
+  }
+  
+  .dropdown:hover .dropdown-content,
+  .dropdown:hover .dropdown-content2,
+  .dropdown:hover .dropdown-content3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icon {
+    display: none;
+  }
+
+  /* ---- Layout Containers
+For the subpages ---- */
+
+.teamDirectors {
+  font-size: 1.10em;
+}
+
+#enroll_career {
+  display: flex;
+  flex-direction: row;
+}
+
+.enrollYourChild {
+  padding-left: 2%;
+}
+
+/*-- Main Page Containers --*/
+
+.secondary-col {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  padding: 0 30px;
+  background: #ffffff;
+  text-align: justify;
+}
+
+.tertiary-col {
+  float: right;
+  width: 50%;
+  display: inline-block;
+  padding: 0 30px;
+  background: #ffffff;
+}
+
+.columngeneral {
+  margin-top: 30px 0;
+  padding-top: 30px;
+}
+
+.overviewCentered {
+  text-align: center;
+}
+
+.overviewBulk {
+  font-size: .85em;
+  text-align: left;
+}
+
+.googleForm {
+  background: #ffbcbc;
+  border-radius: 5%
+}
+
+.banner {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+  
+.main-footer {
+	background: #ffad5a;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+.mainHeading {
+  text-align: center;
+}
+}
