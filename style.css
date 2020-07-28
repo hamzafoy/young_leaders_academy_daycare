@@ -1302,4 +1302,13 @@ For the subpages ---- */
 .mainHeading {
   text-align: center;
 }
+
+#announcementBanner {
+  background: #ffcdcd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #ffeeee;
+  border-bottom: 2px solid #ffeeee;
+}
+
 }
