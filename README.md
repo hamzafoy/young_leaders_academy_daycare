@@ -8,7 +8,7 @@
 
 ## Code Louisville Basic & Optional Requirements
 
-  Visit **[Young Leaders Academy](https://hamzafoy.github.io)** to find my project.
+  Visit **[Young Leaders Academy](http://louisvilleyoungleaders.com/)** to find my project.
 
 <br>
 
